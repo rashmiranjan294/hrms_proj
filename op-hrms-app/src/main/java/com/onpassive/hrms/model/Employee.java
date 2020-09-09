@@ -32,43 +32,44 @@ public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="emp_id")
 	private long empId;
 	
-	@Column
+	@Column(name="first_name")
 	private String firstName;
 	
-	@Column
+	@Column(name="last_name")
 	private String lastName;
 	
-	@Column
+	@Column(name="email_id")
 	private String emailId;
 	
-	@Column
+	@Column(name="gender")
 	private String gender;
 	
-	@Column
+	@Column(name="date_of_birth")
 	private Date dateOfBirth;
 	
-	@Column
+	@Column(name="joining_date")
 	private Date joiningDate;
 	
-	@Column
+	@Column(name="dept_id")
 	private int deptId;
 	
-	@Column
+	@Column(name="manager_id")
 	private int managerId;
 	
-	@Column
+	@Column(name="photo_path")
 	private String photoPath;
 	
-	@Column
+	@Column(name="location")
 	private String location;
 	
-	@Column
+	@Column(name="contactdetails_id")
 	private int contactdetailsId;
 	
-	@Column
 	private String userPassword;
+	
 	
 	public Employee() {
 		super();
